@@ -19,7 +19,53 @@
         <li><a href="papka1/about/vnutr.html"> текущая для относительных</a> </li>
         <li><p>Для получения дополнительной информации посетите страницу <a href="vnutr.html">vnutr.html</a>.</p></li>
         <li><a href="https://ru.wikipedia.org/wiki/Трусова,_Александра_Вячеславовна#Достижения">Перейти к разделу достижения на странице про Трусову</a></li>
+        <li> <map name="myMap" id="myMap">
+            <img src="https://alrfkuban.ru/src/images/news/29032022kubsu.jpg" width="300" height="300" alt="" usemap="#myMap">
+            <area shape="rect" coords="0,0,100,100" href="https://www.kubsu.ru/">
+            <area shape="circle" coords="200,200,50" href="https://www.kubsu.ru/">
+            <a href="https://www.kubsu.ru/"><img src="image.jpg" alt="" usemap="#myMap"></a>
+          </map></li>
+        <li> <a href="#">Ссылка с пустым href</a></li>
+        <li><span style="color: blue; text-decoration: underline; cursor: pointer;">Без href</span></li>
+        <li><a href="vnutr.html" rel="nofollow ">Ссылка по которой запрещен переход поисковикам </a></li>
+        <li><a href="vnutr.html" rel="nofollow noindex">Ссылка запрещенная для индексации </a></li>
+        <li><ol>
+            <li><a href="index.html" title="Описание первой ссылки">Первая ссылка</a></li>
+            <li><a href="index.html" title="Описание второй ссылки">Вторая ссылка</a></li>
+            <li><a href="index.html" title="Описание третьей ссылки">Третья ссылка</a></li>
+          </ol>
+        </li>
     </ul>
-<p id="p1"> фрагмент 1</p>
+    <p id="p1"> фрагмент 1</p>
+    <form>
+        <p><input type="text"  placeholder="Введите ФИО"  ></p>
+        <p><input type="tel"   pattern="[6-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]-[0-9][0-9][0-9]" placeholder="Введите телефон"></p>
+        <p><input type="email"  pattern=".+@aurora\.com" placeholder="Введите email" ></p>
+        <p><input type="date"  value="2023-09-10" placeholder="Введите дату рождения" ></p>
+        <p><b>Ваш пол</b></p>
+        <p><input  type="radio" value="женский"> женский</p>
+        <p><input  type="radio" value="мужской"> мужской</p>
+        <p><input type="submit" value="Выбрать"></p>
+        <p><b>Ваш любимый язык программирования</b></p>
+        <select   multiple>
+            <option selected value="s1">Pascal</option>
+            <option value="s2">C</option>
+            <option value="s3">C++</option>
+            <option value="s4">JavaScript</option>
+            <option value="s5">PHP</option>
+            <option value="s6">Python</option>
+            <option value="s7">Java</option>
+            <option value="s8">Haskel</option>
+            <option value="s9">Clojure</option>
+            <option value="s10">Prolog</option>
+            <option value="s11">Scala</option>
+        </select>
+        <p><b>Биография:</b></p>
+        <p><textarea ></textarea></p>
+        <p>С контрактом ознакомлен</p>
+        <p><input type="checkbox" value="1"> ознакомлен</p>
+        <input type="submit" value="Сохранить"></p>
+    </form>
+
 </body>
 </html>
