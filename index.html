@@ -38,16 +38,16 @@
     </ul>
     <p id="p1"> фрагмент 1</p>
     <form>
-        <p><input type="text"  placeholder="Введите ФИО"  ></p>
-        <p><input type="tel"   pattern="[6-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]-[0-9][0-9][0-9]" placeholder="Введите телефон"></p>
-        <p><input type="email"  pattern=".+@aurora\.com" placeholder="Введите email" ></p>
-        <p><input type="date"  value="2023-09-10" placeholder="Введите дату рождения" ></p>
+        <p><input name="text" type="text"  placeholder="Введите ФИО"  ></p>
+        <p><input name="tel" type="tel"   pattern="[6-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]-[0-9][0-9][0-9]" placeholder="Введите телефон"></p>
+        <p><input name="email" type="email"  pattern=".+@aurora\.com" placeholder="Введите email" ></p>
+        <p><input name="date" type="date"  value="2023-09-10" placeholder="Введите дату рождения" ></p>
         <p><b>Ваш пол</b></p>
-        <p><input  type="radio" value="женский"> женский</p>
-        <p><input  type="radio" value="мужской"> мужской</p>
-        <p><input type="submit" value="Выбрать"></p>
+        <p><input name="pol1" type="radio" value="женский"> женский</p>
+        <p><input name="pol2" type="radio" value="мужской"> мужской</p>
+        <p><input name="sohr" type="submit" value="Выбрать"></p>
         <p><b>Ваш любимый язык программирования</b></p>
-        <select name="select  multiple>
+        <select name="select"  multiple>
             <option selected value="s1">Pascal</option>
             <option value="s2">C</option>
             <option value="s3">C++</option>
