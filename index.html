@@ -8,8 +8,8 @@
         <li><a href="https://www.kubsu.ru/">КубГУ</a></li>
         <li><a href="https://www.kubsu.ru/">КубГУ</a></li>
         <li> <a href="https://www.kubsu.ru/"> <img src="https://alrfkuban.ru/src/images/news/29032022kubsu.jpg" width="50" height="50"> </a> </li>
-        <li><a href="/web1/vnutr.html">на внутренню страницу </a> </li>
-        <li><a href="/web1/index.html">на главную страницу </a> </li>
+        <li><a href="/vnutr.html">на внутренню страницу </a> </li>
+        <li><a href="/index.html">на главную страницу </a> </li>
         
         <li><a href="#p1"> на фрагмент страницы </a> </li>
         <li><a href="index.html?param1=value1&param2=value2&param3=value3">c тремя параметрами</a></li>
@@ -25,10 +25,11 @@
             <area shape="circle" coords="200,200,50" href="https://www.kubsu.ru/">
             <a href="https://www.kubsu.ru/"><img src="image.jpg" alt="" usemap="#myMap"></a>
           </map></li>
-        <li> <a href="#">Ссылка с пустым href</a></li>
-        <li><span style="color: blue; text-decoration: underline; cursor: pointer;">Без href</span></li>
+        <li> <a href="">Ссылка с пустым href</a></li>
+        <li> <a ="">Ссылка с пустым href</a></li>
+        
         <li><a href="vnutr.html" rel="nofollow ">Ссылка по которой запрещен переход поисковикам </a></li>
-        <li><a href="vnutr.html" rel="nofollow noindex">Ссылка запрещенная для индексации </a></li>
+        <li><a href="vnutr.html" rel="nofollow "><noindex>Ссылка запрещенная для индексации</noindex> </a></li>
         <li><ol>
             <li><a href="index.html" title="Описание первой ссылки">Первая ссылка</a></li>
             <li><a href="index.html" title="Описание второй ссылки">Вторая ссылка</a></li>
@@ -38,16 +39,15 @@
     </ul>
     <p id="p1"> фрагмент 1</p>
     <form>
-        <p><input name="text" type="text"  placeholder="Введите ФИО"  ></p>
-        <p><input name="tel" type="tel"   pattern="[6-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]-[0-9][0-9][0-9]" placeholder="Введите телефон"></p>
-        <p><input name="email" type="email"  pattern=".+@aurora\.com" placeholder="Введите email" ></p>
-        <p><input name="date" type="date"  value="2023-09-10" placeholder="Введите дату рождения" ></p>
+        <p><input name="t1" type="text"  placeholder="Введите ФИО"  ></p>
+        <p><input name="tl" type="tel"   pattern="[6-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]-[0-9][0-9][0-9]" placeholder="Введите телефон"></p>
+        <p><input name="em" type="email"  pattern=".+@aurora\.com" placeholder="Введите email" ></p>
+        <p><input name="dat" type="date"  value="2023-09-10" placeholder="Введите дату рождения" ></p>
         <p><b>Ваш пол</b></p>
-        <p><input name="pol1" type="radio" value="женский"> женский</p>
-        <p><input name="pol2" type="radio" value="мужской"> мужской</p>
-        <p><input name="vab" type="submit" value="Выбрать"></p>
+        <p><input name="pol" type="radio" value="женский"> женский</p>
+        <p><input name="pol" type="radio" value="мужской"> мужской</p>
         
-        <label for ="langu">Ваш любимый язык программирования</label>
+        <p>Ваш любимый язык программирования<p>
         <select multiple="multiple" id="langu" name="langu[]">
             <option disabled>Выберете</option>
             <option  value="s1">Pascal</option>
@@ -63,7 +63,7 @@
             <option value="s11">Scala</option>
         </select>
         <p><b>Биография:</b></p>
-        <p><textarea ></textarea></p>
+        <p><textarea name ="bio"></textarea></p>
         <p>С контрактом ознакомлен</p>
         <p><input name="oznakom" type="checkbox" value="1"> ознакомлен</p>
         <p><input name="sohr" type="submit" value="Сохранить"></p>
